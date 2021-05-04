@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
     <title>Restaurant Page</title>
   </head>
   <body>
-    <div id="content"></div>
+    <div id="content">
+      <div id="nav">
+        <div id="navLogo" class="logo">
+          <header>Summer Cakes</header>
+        </div>
+        <div id="navListContainer">
+          <ul id="navList">
+            <li class="navItem">Home</li>
+            <li class="navItem">Menu</li>
+            <li class="navItem">Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <div id="homeBody">
+        <div id="homeContentContainer">
+          <h1>Come visit the best bakery in the world!</h1>
+          <sub>Cakes made with love and care.</sub>
+          <button class="button">Order Now!</button>
+        </div>
+      </div>
+      <div id="menuBody">
+        <div id="menuContainer">
+          <div class="menuItem">
+            <div id="chocolateCake" class="menuImage"></div>
+            <caption>Chocolate Cake</caption>
+          </div>
+          <div class="menuItem">
+            <div id="lemonCake" class="menuImage"></div>
+            <caption>Lemon Cake</caption>
+          </div>
+          <div class="menuItem">
+            <div id="strawberryCake" class="menuImage"></div>
+            <caption>Strawberry Cake</caption>
+          </div>
+          <div class="menuItem">
+            <div id="coconutCake" class="menuImage"></div>
+            <caption>Coconut Cake</caption>
+          </div>
+          <div class="menuItem">
+            <div id="peanutCake" class="menuImage"></div>
+            <caption>Peanut Cake</caption>
+          </div>
+          <div class="menuItem">
+            <div id="carrotCake" class="menuImage"></div>
+            <caption>Brazilian Carrot Cake</caption>
+          </div>
+        </div>
+      </div>
+      <div id="contactBody"></div>
+    </div>
   </body>
   <script src="./main.js"></script>
 </html>
