@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*animation for the inputs*/
+.inputForm:focus ~ .floatingLabel,
+.inputForm:not(:focus):valid ~ .floatingLabel{
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.inputForm {
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+}
+
+.floatingLabel {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  transition: 0.2s ease all;
+}

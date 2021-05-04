@@ -28,6 +28,9 @@
         </div>
       </div>
       <div id="menuBody">
+        <div class="headerContainer">
+          <h1>Menu</h1>
+        </div>
         <div id="menuContainer">
           <div class="menuItem">
             <div id="chocolateCake" class="menuImage"></div>
@@ -55,7 +58,34 @@
           </div>
         </div>
       </div>
-      <div id="contactBody"></div>
+      <div id="contactBody">
+        <div class="headerContainer">
+          <h1>Contact us</h1>
+        </div>
+        <div id="contactContainer">
+          <div id="information">
+          </div>
+          <form id="contactForm">
+            <div class="inputContainer">
+              <input id="fullName" class="inputForm" required type="text">
+              <span class="floatingLabel">Full Name</span>
+            </div>
+
+            <div class="inputContainer">
+              <input id="Email" class="inputForm" required type="email">
+              <span class="floatingLabel">Email</span>
+            </div>
+
+            <div class="inputContainer">
+              <textarea id="message" class="inputForm" required></textarea>
+              <span class="floatingLabel">Type your message...</span>
+            </div>
+
+            <button id="contactButton" class="button">Send</button>
+          </form>
+          <div id="googleMaps"></div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="./main.js"></script>
