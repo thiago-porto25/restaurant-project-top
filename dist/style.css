@@ -5,11 +5,12 @@
   --purple: #583d72;
 }
 html {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 body {
-  height: 100%;
+  height: fit-content;
   width: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -29,6 +30,7 @@ body {
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 10px var(--pinker);
+  z-index: 1;
 }
 #navLogo {
   width: 45%;
@@ -90,7 +92,7 @@ body {
 
 /* Home page styling */
 #homeBody {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -162,9 +164,55 @@ color: rgb(85, 1, 102);
 
 /* Contact Page styling */
 #contactBody {
-  display: none;
+  margin: 0;
+  margin-top: 7rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width:100%;
 }
-
+.headerContainer h1{
+  margin-bottom: 3rem;
+  color: #502974;
+  position: relative;
+}
+.headerContainer h1::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -2px; 
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+	width: 100%;
+  background: var(--pinker);
+}
+#contactContainer {
+  max-width: 60%;
+  min-width: 700px;
+  height: fit-content;
+  background-color: var(--pink);
+  border-radius: 10px;
+}
+#contactForm {
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#googleMaps {
+  display: flex;
+  justify-content: center;
+  margin: 4rem;
+}
+#message {
+  height: 45px !important;
+  resize: none;
+  
+}
 
 
 
@@ -181,11 +229,12 @@ color: rgb(85, 1, 102);
 /*animation for the inputs*/
 .inputForm:focus ~ .floatingLabel,
 .inputForm:not(:focus):valid ~ .floatingLabel{
-  top: 8px;
+  top: 3px;
   bottom: 10px;
-  left: 20px;
+  left: 2px;
   font-size: 11px;
   opacity: 1;
+  color:var(--purple);
 }
 
 .inputContainer {
@@ -193,15 +242,25 @@ color: rgb(85, 1, 102);
 }
 
 .inputForm {
-  font-size: 14px;
-  width: 200px;
-  height: 35px;
+  font-size: 17px;
+  width: 27rem;
+  height: 25px;
+  padding-top: 20px;
+  padding-left: 6px;
+  background-color: var(--pink);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid var(--purple);
+  outline: none;
+  margin-bottom: 1rem;
 }
 
 .floatingLabel {
   position: absolute;
   pointer-events: none;
-  left: 20px;
-  top: 18px;
+  left: 2px;
+  top: 15px;
   transition: 0.2s ease all;
+  color: rgb(80, 79, 79);
 }
