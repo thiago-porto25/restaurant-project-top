@@ -1,8 +1,12 @@
 :root {
-  --pastel: #ffc996;
+  --mainPurple: rgb(248, 163, 248);
   --pink: #ff8474;
-  --violet: #9f5f80;
+  --pinker: #ee409a;
   --purple: #583d72;
+}
+html {
+  height: 100vh;
+  width: 100vw;
 }
 body {
   height: 100%;
@@ -10,16 +14,21 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+#content {
+  height: 100%;
+  width: 100%;
+}
 
 /* nav styling */
 #nav {
   position: fixed;
-  background-color: var(--pink);
+  background-color: var(--mainPurple);
   width: 100%;
   height: 5rem;
   top: 0;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 0px 10px var(--pinker);
 }
 #navLogo {
   width: 45%;
@@ -28,10 +37,10 @@ body {
   align-items: center;
   font-family: 'Pacifico', sans-serif;
   font-size: 50px;
-  text-shadow: 1px 2px 3px var(--pastel);
+  text-shadow: 1px 2px 3px var(--pink);
 }
 #navLogo header {
-  color: var(--violet);
+  color: var(--pinker);
 }
 #navLogo span {
   color: var(--purple);
@@ -51,7 +60,7 @@ body {
   list-style: none;
   cursor: pointer;
   font-size: 20px;
-  color: #4a1d75;;
+  color: #502974;;
   text-shadow: 1px 2px 3px var(--pastel);
   font-weight: bolder;
   position: relative;
@@ -80,17 +89,78 @@ body {
 }
 
 /* Home page styling */
+#homeBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url(../images/homeBackground.jpg);
+  background-size: cover;
+}
+#homeContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#homeContentContainer h1 {
+  text-align: center;
+  font-size: 65px;
+  background-clip: unset;
+  background: -webkit-linear-gradient(90deg, purple, rgb(253, 72, 103));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  margin-top: 8rem;
+}
+#homeContentContainer p {
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  background-clip: unset;
+  background: -webkit-linear-gradient(90deg, rgb(253, 72, 103), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#homeContentContainer button {
+background: linear-gradient(45deg, var(--mainPurple),var(--pinker));
+box-shadow: 0px 0px 4px var(--pinker);
+font-size: 18px;
+color: rgb(85, 1, 102);
+}
+#homeContentContainer button:hover {
+  background: linear-gradient(45deg, rgb(248, 189, 248), #f55cab);
+  box-shadow: 0px 0px 7px #f55cab;
+  font-size: 19px;
+  color: rgb(105, 3, 126);
+}
+.button {
+  outline: none;
+  border: none;
+  width: 9rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+  font-weight: bold;
+}
+.button:hover {
+  width: 9.5rem;
+  height: 3.2rem;
+  margin: -0.2rem -0.25rem -0.1rem -0.25rem;
+}
 
-
-
-
-
-
-
-
+/* Menu Page styling */
 #menuBody {
   display: none;
 }
+
+
+
+
+/* Contact Page styling */
 #contactBody {
   display: none;
 }
