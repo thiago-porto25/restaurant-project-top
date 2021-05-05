@@ -4,6 +4,82 @@
   --violet: #9f5f80;
   --purple: #583d72;
 }
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* nav styling */
+#nav {
+  position: fixed;
+  background-color: var(--pink);
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+#navLogo {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Pacifico', sans-serif;
+  font-size: 50px;
+  text-shadow: 1px 2px 3px var(--pastel);
+}
+#navLogo header {
+  color: var(--violet);
+}
+#navLogo span {
+  color: var(--purple);
+}
+#navListContainer{
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#navList {
+  display: flex;
+  margin-right: -2rem;
+}
+.navItem {
+  margin: 0 2rem 0 2rem;
+  list-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #4a1d75;;
+  text-shadow: 1px 2px 3px var(--pastel);
+  font-weight: bolder;
+  position: relative;
+}
+.navItem:hover {
+  color: var(--purple);
+}
+.navItem::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  bottom: -4px; 
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+	width: 0%;
+	background: var(--purple);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+.navItem:hover::after {
+  width: 100%;
+}
+
+/* Home page styling */
 
 
 
@@ -12,13 +88,12 @@
 
 
 
-
-
-
-
-
-
-
+#menuBody {
+  display: none;
+}
+#contactBody {
+  display: none;
+}
 
 
 
@@ -32,7 +107,6 @@
   height: 450px;
   border: 0;
 }
-
 
 /*animation for the inputs*/
 .inputForm:focus ~ .floatingLabel,
