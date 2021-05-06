@@ -197,6 +197,34 @@ color: rgb(85, 1, 102);
   background-color: var(--pink);
   border-radius: 10px;
 }
+#information {
+  margin: 4rem;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#information::before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  margin: 0 auto !important;
+  top: -3rem;
+  left: 0;
+  right: 0;
+	width: 90%;
+  background: rgb(238, 43, 118);
+}
+.contactInfo {
+  color: #441d68;
+  font-weight: bold;
+}
+.fas {
+  font-size: 25px;
+  color:rgb(238, 43, 118);
+  margin-right: 0.5rem;
+  margin-left: 4rem;
+}
 #contactForm {
   margin: 4rem;
   display: flex;
@@ -206,7 +234,7 @@ color: rgb(85, 1, 102);
 }
 .contactTitle {
   margin-bottom: 2rem;
-  color: #502974;
+  color: #441d68;
   position: relative;
   font-size: 25px;
   font-weight: bolder;
@@ -219,8 +247,8 @@ color: rgb(85, 1, 102);
   margin: 0 auto;
   left: 0;
   right: 0;
-	width: 70%;
-  background: rgb(206, 36, 101);
+	width: 100%;
+  background: rgb(221, 7, 89);
 }
 #googleMaps {
   display: flex;
