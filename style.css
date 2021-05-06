@@ -158,7 +158,7 @@ color: rgb(85, 1, 102);
 
 /* Menu Page styling */
 #menuBody {
-  display: none;
+  display: flex;
   margin: 0;
   margin-top: 5rem;
   padding-bottom: 5rem;
@@ -175,7 +175,7 @@ color: rgb(85, 1, 102);
 
 /* Contact Page styling */
 #contactBody {
-  display: flex;
+  display: none;
   margin: 0;
   margin-top: 5rem;
   padding-bottom: 5rem;
@@ -204,7 +204,7 @@ color: rgb(85, 1, 102);
 	width: 100%;
   background: rgb(238, 43, 118);
 }
-#contactContainer {
+.templateContainer {
   max-width: 60%;
   min-width: 700px;
   height: fit-content;
