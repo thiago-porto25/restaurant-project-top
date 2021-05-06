@@ -10,7 +10,7 @@ html {
   margin: 0;
 }
 body {
-  height: fit-content;
+  height: 100%;
   width: 100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -129,14 +129,13 @@ body {
 #homeContentContainer button {
 background: linear-gradient(45deg, var(--mainPurple),var(--pinker));
 box-shadow: 0px 0px 4px var(--pinker);
-font-size: 18px;
 color: rgb(85, 1, 102);
 }
 #homeContentContainer button:hover {
   background: linear-gradient(45deg, rgb(248, 189, 248), #f55cab);
-  box-shadow: 0px 0px 7px #f55cab;
-  font-size: 19px;
+  box-shadow: 0px 0px 7px rgb(245, 92, 171);
   color: rgb(105, 3, 126);
+  margin: -0.2rem -0.25rem -0.1rem -0.25rem;
 }
 .button {
   outline: none;
@@ -147,11 +146,12 @@ color: rgb(85, 1, 102);
   border-radius: 5px;
   transition: 0.2s ease-in-out;
   font-weight: bold;
+  font-size: 18px;
 }
 .button:hover {
   width: 9.5rem;
   height: 3.2rem;
-  margin: -0.2rem -0.25rem -0.1rem -0.25rem;
+  font-size: 19px;
 }
 
 /* Menu Page styling */
@@ -165,19 +165,25 @@ color: rgb(85, 1, 102);
 /* Contact Page styling */
 #contactBody {
   margin: 0;
-  margin-top: 7rem;
+  margin-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   width:100%;
+  background-image: url(../images/contactBackground.jpg);
+  background-size: cover;
 }
 .headerContainer h1{
   margin-bottom: 3rem;
-  color: #502974;
+  background-clip: unset;
+  background: -webkit-linear-gradient(90deg, rgb(240, 16, 240), rgb(243, 103, 243));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   position: relative;
   font-size: 40px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .headerContainer h1::after {
   position: absolute;
@@ -188,7 +194,7 @@ color: rgb(85, 1, 102);
   left: 0;
   right: 0;
 	width: 100%;
-  background: var(--pinker);
+  background: rgb(238, 43, 118);
 }
 #contactContainer {
   max-width: 60%;
@@ -234,10 +240,11 @@ color: rgb(85, 1, 102);
 }
 .contactTitle {
   margin-bottom: 2rem;
-  color: #441d68;
+  color: #501a83;
   position: relative;
   font-size: 25px;
   font-weight: bolder;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 .contactTitle::after{
   position: absolute;
@@ -262,9 +269,12 @@ color: rgb(85, 1, 102);
 #contactButton {
   background:rgb(105, 3, 126);
   box-shadow: 0px 0px 4px var(--pinker);
-  font-size: 18px;
   color: var(--mainPurple);
   margin-top: 2rem;
+}
+#contactButton:hover {
+  background:rgb(141, 11, 167);
+  margin: 2rem -0.25rem -0.2rem -0.25rem;
 }
 
 
