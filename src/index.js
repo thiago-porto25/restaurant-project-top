@@ -30,7 +30,7 @@ const initLoad = (function(){
 
     const thirdLi = document.createElement('li')
     thirdLi.setAttribute('class', 'navItem')
-    thirdLi.textContent = 'Contact us'
+    thirdLi.textContent = 'Contact Us'
 
     content.appendChild(nav)
 
@@ -47,7 +47,42 @@ const initLoad = (function(){
     navList.appendChild(thirdLi)
   }
 
-  return { loadNav }
+  const loadHome = () => {
+    const homeBody = document.createElement('div')
+    homeBody.setAttribute('id', 'homeBody')
+
+    const homeContentContainer = document.createElement('div')
+    homeContentContainer.setAttribute('id', 'homeContentContainer')
+
+    const h1 = document.createElement('h1')
+    h1.textContent = 'Come visit the best bakery in the world!'
+
+    const p = document.createElement('p')
+    p.textContent = 'Cakes made with love and care.'
+
+    const br = document.createElement('br')
+
+    const a = document.createElement('a')
+    a.setAttribute('href', '"https://github.com/thiago-porto25"')
+
+    const button = document.createElement('button')
+    button.setAttribute('class', 'button')
+    button.textContent = 'Order Now!'
+
+    content.appendChild(homeBody)
+
+    homeBody.appendChild(homeContentContainer)
+
+    homeContentContainer.appendChild(h1)
+    homeContentContainer.appendChild(p)
+    homeContentContainer.appendChild(br)
+    homeContentContainer.appendChild(a)
+
+    a.appendChild(button)
+  }
+
+  return { loadNav, loadHome }
 })()
 
 initLoad.loadNav()
+initLoad.loadHome()
