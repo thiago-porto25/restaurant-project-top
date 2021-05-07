@@ -259,7 +259,7 @@ color: rgb(85, 1, 102);
 }
 .templateContainer {
   max-width: 60%;
-  min-width: 700px;
+  min-width: 400px;
   height: fit-content;
   background-color: #ff8474b2;
   border-radius: 10px;
