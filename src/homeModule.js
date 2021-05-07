@@ -1,5 +1,5 @@
 const initLoad = (function(){
-  const content = document.querySelector('#content')
+  const _content = document.querySelector('#content')
 
   const loadNav = () => {
     const nav = document.createElement('div')
@@ -32,7 +32,7 @@ const initLoad = (function(){
     thirdLi.setAttribute('class', 'navItem')
     thirdLi.textContent = 'Contact Us'
 
-    content.appendChild(nav)
+    _content.appendChild(nav)
 
     nav.appendChild(navLogo)
     nav.appendChild(navListContainer)
@@ -46,6 +46,7 @@ const initLoad = (function(){
     navList.appendChild(secondLi)
     navList.appendChild(thirdLi)
   }
+
 
   const loadHome = () => {
     const homeBody = document.createElement('div')
@@ -63,13 +64,14 @@ const initLoad = (function(){
     const br = document.createElement('br')
 
     const a = document.createElement('a')
-    a.setAttribute('href', '"https://github.com/thiago-porto25"')
+    a.setAttribute('href', 'https://github.com/thiago-porto25')
 
     const button = document.createElement('button')
     button.setAttribute('class', 'button')
+    button.setAttribute('id', 'homeButton')
     button.textContent = 'Order Now!'
 
-    content.appendChild(homeBody)
+    _content.appendChild(homeBody)
 
     homeBody.appendChild(homeContentContainer)
 
@@ -81,7 +83,13 @@ const initLoad = (function(){
     a.appendChild(button)
   }
 
-  return { loadNav, loadHome }
+
+  const unloadHome = () => {
+    const homeBody = document.querySelector('#homeBody')
+    _content.removeChild(homeBody)
+  }
+
+  return { loadNav, loadHome, unloadHome }
 })()
 
 export {initLoad}
