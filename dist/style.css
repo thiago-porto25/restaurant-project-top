@@ -22,6 +22,14 @@ body {
   width: 100%;
 }
 
+
+
+
+
+
+
+
+
 /* nav styling */
 #nav {
   position: fixed;
@@ -92,6 +100,14 @@ body {
   width: 100%;
 }
 
+
+
+
+
+
+
+
+
 /* Home page styling */
 #homeBody {
   display: none;
@@ -156,9 +172,15 @@ color: rgb(85, 1, 102);
   font-size: 19px;
 }
 
+
+
+
+
+
+
 /* Menu Page styling */
 #menuBody {
-  display: flex;
+  display: none;
   margin: 0;
   margin-top: 5rem;
   padding-bottom: 5rem;
@@ -226,9 +248,13 @@ color: rgb(85, 1, 102);
 
 
 
+
+
+
+
 /* Contact Page styling */
 #contactBody {
-  display: none;
+  display: flex;
   margin: 0;
   margin-top: 5rem;
   padding-bottom: 5rem;
@@ -266,21 +292,9 @@ color: rgb(85, 1, 102);
 }
 #information {
   margin: 4rem;
-  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   position: relative;
-}
-#information::before {
-  position: absolute;
-  content: '';
-  height: 2px;
-  margin: 0 auto !important;
-  top: -3rem;
-  left: 0;
-  right: 0;
-	width: 90%;
-  background: rgb(238, 43, 118);
 }
 .contactInfo {
   color: #441d68;
@@ -298,6 +312,8 @@ color: rgb(85, 1, 102);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-top: 6rem;
 }
 .contactTitle {
   margin-bottom: 2rem;
@@ -349,6 +365,11 @@ color: rgb(85, 1, 102);
   height: 450px;
   border: 0;
 }
+
+
+
+
+
 
 /*animation for the inputs*/
 .inputForm:focus ~ .floatingLabel,
