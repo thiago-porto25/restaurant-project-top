@@ -9,6 +9,7 @@ const menuLoad = (function() {
     menuHeadContainer.setAttribute('class', 'headerContainer')
 
     const h1 = document.createElement('h1')
+    h1.textContent = 'Menu'
 
     const menuContainer = document.createElement('div')
     menuContainer.setAttribute('id', 'menuContainer')

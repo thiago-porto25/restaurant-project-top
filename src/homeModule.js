@@ -21,14 +21,17 @@ const initLoad = (function(){
     navList.setAttribute('id', 'navList')
 
     const firstLi = document.createElement('li')
+    firstLi.setAttribute('id', 'liHome')
     firstLi.setAttribute('class', 'navItem')
     firstLi.textContent = 'Home'
 
     const secondLi = document.createElement('li')
+    secondLi.setAttribute('id', 'liMenu')
     secondLi.setAttribute('class', 'navItem')
     secondLi.textContent = 'Menu'
 
     const thirdLi = document.createElement('li')
+    thirdLi.setAttribute('id', 'liContact')
     thirdLi.setAttribute('class', 'navItem')
     thirdLi.textContent = 'Contact Us'
 
