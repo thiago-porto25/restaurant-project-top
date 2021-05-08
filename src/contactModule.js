@@ -73,7 +73,7 @@ const contactLoad = (function() {
     input2.setAttribute('id', 'Email')
     input2.setAttribute('class', 'inputForm')
     input2.setAttribute('required', '')
-    input2.setAttribute('type', 'email')
+    input2.setAttribute('type', 'text')
     const span2 = document.createElement('span')
     span2.setAttribute('class', 'floatingLabel')
     span2.textContent = 'Email'

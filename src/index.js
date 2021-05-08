@@ -2,62 +2,63 @@ import { initLoad } from './homeModule'
 import { menuLoad } from './menuModule'
 import { contactLoad } from './contactModule'
 
-initLoad.loadNav()
-initLoad.loadHome()
-
-const homeBtn = document.querySelector('#liHome')
-const menuBtn = document.querySelector('#liMenu')
-const contactBtn = document.querySelector('#liContact')
-
-const changeToHome = () => {
-  const content = document.querySelector('#content')
-
-  if(content.querySelector('#contactBody')){
-    contactLoad.unload()
-    contactBtn.setAttribute('class', 'navItem')
-  } 
-  else if(content.querySelector('#menuBody')) {
-    menuLoad.unload()
-    menuBtn.setAttribute('class', 'navItem')
-  }
-  
-  homeBtn.setAttribute('class', 'navItem selected')
+const firstLoad = (function() {
+  initLoad.loadNav()
   initLoad.loadHome()
-}
+})()
 
-const changeToMenu = () => {
-  const content = document.querySelector('#content')
+const webPageHandler = (function () {
+  const _homeBtn = document.querySelector('#liHome')
+  const _menuBtn = document.querySelector('#liMenu')
+  const _contactBtn = document.querySelector('#liContact')
 
-  if(content.querySelector('#contactBody')){
-    contactLoad.unload()
-    contactBtn.setAttribute('class', 'navItem')
-  } 
-  else if(content.querySelector('#homeBody')) {
-    initLoad.unloadHome()
-    homeBtn.setAttribute('class', 'navItem')
+  const changeToHome = () => {
+    const content = document.querySelector('#content')
+
+    if (content.querySelector('#contactBody')) {
+      contactLoad.unload()
+      _contactBtn.setAttribute('class', 'navItem')
+    } else if (content.querySelector('#menuBody')) {
+      menuLoad.unload()
+      _menuBtn.setAttribute('class', 'navItem')
+    }
+
+    _homeBtn.setAttribute('class', 'navItem selected')
+    initLoad.loadHome()
   }
 
-  menuLoad.load()
-  menuBtn.setAttribute('class', 'navItem selected')
-}
+  const changeToMenu = () => {
+    const content = document.querySelector('#content')
 
-const changeToContact = () => {
-  const content = document.querySelector('#content')
-  console.log(content)
+    if (content.querySelector('#contactBody')) {
+      contactLoad.unload()
+      _contactBtn.setAttribute('class', 'navItem')
+    } else if (content.querySelector('#homeBody')) {
+      initLoad.unloadHome()
+      _homeBtn.setAttribute('class', 'navItem')
+    }
 
-  if(content.querySelector('#menuBody')) {
-    menuLoad.unload()
-    menuBtn.setAttribute('class', 'navItem')
-  }
-  else if(content.querySelector('#homeBody')) {
-    initLoad.unloadHome()
-    homeBtn.setAttribute('class', 'navItem')
+    menuLoad.load()
+    _menuBtn.setAttribute('class', 'navItem selected')
   }
 
-  contactBtn.setAttribute('class', 'navItem selected')
-  contactLoad.load()
-}
+  const changeToContact = () => {
+    const content = document.querySelector('#content')
+    console.log(content)
 
-homeBtn.addEventListener('click', changeToHome)
-menuBtn.addEventListener('click', changeToMenu)
-contactBtn.addEventListener('click', changeToContact)
+    if (content.querySelector('#menuBody')) {
+      menuLoad.unload()
+      _menuBtn.setAttribute('class', 'navItem')
+    } else if (content.querySelector('#homeBody')) {
+      initLoad.unloadHome()
+      _homeBtn.setAttribute('class', 'navItem')
+    }
+
+    _contactBtn.setAttribute('class', 'navItem selected')
+    contactLoad.load()
+  }
+
+  _homeBtn.addEventListener('click', changeToHome)
+  _menuBtn.addEventListener('click', changeToMenu)
+  _contactBtn.addEventListener('click', changeToContact)
+})()
