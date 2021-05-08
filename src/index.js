@@ -45,11 +45,11 @@ const changeToContact = () => {
   const content = document.querySelector('#content')
   console.log(content)
 
-  if(content.querySelector('#menuBody') != undefined) {
+  if(content.querySelector('#menuBody')) {
     menuLoad.unload()
     menuBtn.setAttribute('class', 'navItem')
   }
-  else if(content.querySelector('#homeBody' != undefined) ) {
+  else if(content.querySelector('#homeBody')) {
     initLoad.unloadHome()
     homeBtn.setAttribute('class', 'navItem')
   }

@@ -61,7 +61,7 @@ const contactLoad = (function() {
     const input1 = document.createElement('input')
     input1.setAttribute('id', 'fullName')
     input1.setAttribute('class', 'inputForm')
-    input1.setAttribute('required')
+    input1.setAttribute('required', '')
     input1.setAttribute('type', 'text')
     const span1 = document.createElement('span')
     span1.setAttribute('class', 'floatingLabel')
@@ -72,7 +72,7 @@ const contactLoad = (function() {
     const input2 = document.createElement('input')
     input2.setAttribute('id', 'Email')
     input2.setAttribute('class', 'inputForm')
-    input2.setAttribute('required')
+    input2.setAttribute('required', '')
     input2.setAttribute('type', 'email')
     const span2 = document.createElement('span')
     span2.setAttribute('class', 'floatingLabel')
@@ -83,7 +83,7 @@ const contactLoad = (function() {
     const textarea = document.createElement('textarea')
     textarea.setAttribute('id', 'message')
     textarea.setAttribute('class', 'inputForm')
-    textarea.setAttribute('required')
+    textarea.setAttribute('required', '')
     const span3 = document.createElement('span')
     span3.setAttribute('class', 'floatingLabel')
     span3.textContent = 'Type your message...'
@@ -91,6 +91,7 @@ const contactLoad = (function() {
     const contactButton = document.createElement('button')
     contactButton.setAttribute('id', 'contactButton')
     contactButton.setAttribute('class', 'button')
+    contactButton.textContent = "Send"
 
     //append all elements
     content.appendChild(contactBody)
