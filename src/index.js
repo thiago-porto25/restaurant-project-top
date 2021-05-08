@@ -1,10 +1,9 @@
 import { initLoad } from './homeModule'
 import { menuLoad } from './menuModule'
 
-initLoad.loadNav()
-//initLoad.loadHome()
-
-menuLoad.load()
+const homeBtn = document.querySelector('#liHome')
+const menuBtn = document.querySelector('#liMenu')
+const contactBtn = document.querySelector('#liContact')
 
 const changeToHome = () => {
   menuLoad.unload()
@@ -16,9 +15,8 @@ const changeToMenu = () => {
   menuLoad.load()
 }
 
-const homeBtn = document.querySelector('#liHome')
-const menuBtn = document.querySelector('#liMenu')
-const contactBtn = document.querySelector('#liContact')
-
 homeBtn.addEventListener('click', changeToHome)
 menuBtn.addEventListener('click', changeToMenu)
+
+initLoad.loadNav()
+initLoad.loadHome()
