@@ -43,3 +43,4 @@ const changeToContact = () => {
 
 homeBtn.addEventListener('click', changeToHome)
 menuBtn.addEventListener('click', changeToMenu)
+contactBtn.addEventListener('click', changeToContact)
