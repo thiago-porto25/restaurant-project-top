@@ -99,6 +99,12 @@ body {
 .navItem:hover::after {
   width: 100%;
 }
+.selected {
+  color: var(--purple);
+}
+.selected::after {
+  width: 100%;
+}
 
 
 
