@@ -180,7 +180,7 @@ color: rgb(85, 1, 102);
 
 /* Menu Page styling */
 #menuBody {
-  display: none;
+  display: flex;
   margin: 0;
   margin-top: 5rem;
   padding-bottom: 5rem;
