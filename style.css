@@ -123,7 +123,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
-  background-image: url(../images/homeBackground.jpg);
+  background-image: url(./images/homeBackground.jpg);
   background-size: cover;
 }
 #homeContentContainer {
@@ -194,7 +194,7 @@ color: rgb(85, 1, 102);
   align-items: center;
   height: 100%;
   width: 100%;
-  background-image: url(../images/homeBackground.jpg);
+  background-image: url(./images/homeBackground.jpg);
   background-size: cover;
 }
 #menuContainer {
@@ -233,22 +233,22 @@ color: rgb(85, 1, 102);
   margin-bottom: 1rem;
 }
 #chocolateCake {
-  background-image: url(../images/chocolateCake.jpg);
+  background-image: url(./images/chocolateCake.jpg);
 }
 #lemonCake {
-  background-image: url(../images/lemonCake.jpg);
+  background-image: url(./images/lemonCake.jpg);
 }
 #strawberryCake {
-  background-image: url(../images/strawberryCake.jpg);
+  background-image: url(./images/strawberryCake.jpg);
 }
 #coconutCake {
-  background-image: url(../images/coconutCake.jpg);
+  background-image: url(./images/coconutCake.jpg);
 }
 #peanutCake {
-  background-image: url(../images/peanutCake.jpg);
+  background-image: url(./images/peanutCake.jpg);
 }
 #carrotCake {
-  background-image: url(../images/carrotCake.jpg);
+  background-image: url(./images/carrotCake.jpg);
 }
 
 
@@ -268,7 +268,7 @@ color: rgb(85, 1, 102);
   align-items: center;
   height: 100%;
   width: 100%;
-  background-image: url(../images/homeBackground.jpg);
+  background-image: url(./images/homeBackground.jpg);
   background-size: cover;
 }
 .headerContainer h1{
