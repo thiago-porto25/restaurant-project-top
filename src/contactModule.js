@@ -1,5 +1,3 @@
-import { ifError } from "node:assert"
-
 const contactLoad = (function() {
   const content = document.querySelector('#content')
 
