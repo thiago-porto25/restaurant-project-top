@@ -22,7 +22,7 @@ const initLoad = (function(){
 
     const firstLi = document.createElement('li')
     firstLi.setAttribute('id', 'liHome')
-    firstLi.setAttribute('class', 'navItem')
+    firstLi.setAttribute('class', 'navItem selected')
     firstLi.textContent = 'Home'
 
     const secondLi = document.createElement('li')
