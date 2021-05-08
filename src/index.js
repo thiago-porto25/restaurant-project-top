@@ -1,5 +1,6 @@
 import { initLoad } from './homeModule'
 import { menuLoad } from './menuModule'
+import { contactLoad } from './contactModule'
 
 initLoad.loadNav()
 initLoad.loadHome()
