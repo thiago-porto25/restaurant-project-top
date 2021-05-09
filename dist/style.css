@@ -331,7 +331,7 @@ color: rgb(85, 1, 102);
 #contactButton {
   background:rgb(105, 3, 126);
   box-shadow: 0px 0px 4px var(--pinker);
-  color: var(--mainPurple);
+  color: white;
   margin-top: 2rem;
 }
 #contactButton:hover {
@@ -430,6 +430,66 @@ color: rgb(85, 1, 102);
   #homeContentContainer p {
     font-size: 18px;
   }
+  #menuBody {
+    margin: 0;
+  }
+  #menuContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .templateContainer {
+    min-width: 95%;
+    width: 95%;
+  }
+  .menuItem {
+    width: fit-content;
+  }
+  .menuImage {
+    height: 15rem;
+    width: 15rem;
+  }
+  #contactBody {
+    margin: 0;
+  }
+  #information {
+    margin: 1rem;
+  }
+  .fas {
+    margin: 0;
+  }
+  .contactInfo p {
+    font-size: 15px;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  #googleMaps {
+    margin: 1rem;
+    height: 30rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  #googleMaps iframe {
+    width: 100%;
+    height: 100%;
+  }
+  #contactForm {
+    margin: 1rem;
+    padding-bottom: 2rem;
+  }
+  .inputContainer{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+  .inputContainer input {
+    width: 97%;
+  }
+  .inputContainer textarea {
+    width: 100%;
+  }
+  .headerContainer h1 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 290px) {
@@ -438,5 +498,8 @@ color: rgb(85, 1, 102);
   }
   .navItem {
     font-size: 15px;
+  }
+  .menuItem p {
+    font-size: 25px;
   }
 } 
