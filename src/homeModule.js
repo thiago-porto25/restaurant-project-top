@@ -1,4 +1,4 @@
-const initLoad = (function(){
+const initLoad = (function () {
   const _content = document.querySelector('#content')
 
   const loadNav = () => {
@@ -50,7 +50,6 @@ const initLoad = (function(){
     navList.appendChild(thirdLi)
   }
 
-
   const loadHome = () => {
     const homeBody = document.createElement('div')
     homeBody.setAttribute('id', 'homeBody')
@@ -86,7 +85,6 @@ const initLoad = (function(){
     a.appendChild(button)
   }
 
-
   const unloadHome = () => {
     const homeBody = document.querySelector('#homeBody')
     _content.removeChild(homeBody)
@@ -95,4 +93,4 @@ const initLoad = (function(){
   return { loadNav, loadHome, unloadHome }
 })()
 
-export {initLoad}
+export { initLoad }

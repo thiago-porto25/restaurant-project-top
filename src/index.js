@@ -2,7 +2,7 @@ import { initLoad } from './homeModule'
 import { menuLoad } from './menuModule'
 import { contactLoad } from './contactModule'
 
-const firstLoad = (function() {
+const firstLoad = (function () {
   initLoad.loadNav()
   initLoad.loadHome()
 })()

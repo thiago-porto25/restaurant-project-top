@@ -1,4 +1,4 @@
-const contactLoad = (function() {
+const contactLoad = (function () {
   const content = document.querySelector('#content')
 
   const load = () => {
@@ -21,7 +21,8 @@ const contactLoad = (function() {
     const contactInfo1 = document.createElement('div')
     contactInfo1.setAttribute('class', 'contactInfo')
     const p1 = document.createElement('p')
-    p1.textContent = ' Pain Gaming Street, 123 - Flamengo, Rio de Janeiro - RJ, Brazil'
+    p1.textContent =
+      ' Pain Gaming Street, 123 - Flamengo, Rio de Janeiro - RJ, Brazil'
     const i1 = document.createElement('i')
     i1.setAttribute('class', 'fas fa-map-marker-alt')
 
@@ -44,7 +45,10 @@ const contactLoad = (function() {
     googleMaps.setAttribute('id', 'googleMaps')
 
     const iframe = document.createElement('iframe')
-    iframe.setAttribute('src', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470399.28070920164!2d-43.7279885349577!3d-22.91357811401604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997efe4224b50b%3A0xf988253c846c59ee!2sRio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1620138741887!5m2!1spt-BR!2sbr')
+    iframe.setAttribute(
+      'src',
+      'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470399.28070920164!2d-43.7279885349577!3d-22.91357811401604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997efe4224b50b%3A0xf988253c846c59ee!2sRio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1620138741887!5m2!1spt-BR!2sbr'
+    )
     iframe.setAttribute('allowfullscreen', '')
     iframe.setAttribute('loading', 'lazy')
 
@@ -91,7 +95,7 @@ const contactLoad = (function() {
     const contactButton = document.createElement('button')
     contactButton.setAttribute('id', 'contactButton')
     contactButton.setAttribute('class', 'button')
-    contactButton.textContent = "Send"
+    contactButton.textContent = 'Send'
 
     //append all elements
     content.appendChild(contactBody)
@@ -131,12 +135,10 @@ const contactLoad = (function() {
     contactForm.appendChild(contactButton)
   }
 
-
   const unload = () => {
     const contactBody = document.querySelector('#contactBody')
     content.removeChild(contactBody)
   }
-
 
   return { load, unload }
 })()

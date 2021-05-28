@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/thiago-porto25/restaurant-project-top#readme",
   "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "2.3.0",
     "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0"
   }

@@ -1,4 +1,4 @@
-const menuLoad = (function() {
+const menuLoad = (function () {
   const content = document.querySelector('#content')
 
   const load = () => {
@@ -111,13 +111,11 @@ const menuLoad = (function() {
     menuItem6.appendChild(sub6)
   }
 
-
   const unload = () => {
     const menuBody = document.querySelector('#menuBody')
     content.removeChild(menuBody)
   }
 
-  
   return { load, unload }
 })()
 
